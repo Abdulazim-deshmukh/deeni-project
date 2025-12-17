@@ -17,9 +17,3 @@ class Dua(models.Model):
         return self.name
     
 
-class Azan(models.Model):
-    title = models.CharField(max_length=100)
-    audio_file = models.FileField(upload_to="azan/")
-    
-    def __str__(self):
-        return self.title
